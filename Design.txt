@@ -1,0 +1,31 @@
+For my project I wanted to make a game that would have an interactive mode and
+a game mode. The interactive mode would allow the user to interact with the 
+environment around him or her and then allow for different movements to 
+show different animations. I used this doing the kinect. Depending on the user's
+movements I would implement a certain animation on top of the user. So if the 
+user would lift their hand as if they were to hold the umbrella I would implement
+a feature that would put an umbrella in their hand and implement a rain backdrop.
+I was able to have different animations through boolean flags that would 
+be reset if the user's face overlapped with their face. 
+For the game mode I implemented some of the animation backdrops behind a game.
+For game1 I would have certain objects fall from the sky( like with the rain).
+The user would then collect the objects to get a score. If the objects went off
+the screen the score would be reduced. 
+For Game Mode 2 I drew a broom in the left hand of the user and had an intersect
+function with the person's right hand. The backdrop of the animation would depend
+on the user's shoulder's movement. Essentially what the background is is a cropped
+form of the original image, with the coordinates of the image depending on the 
+person's shoulder movement. So if the user were to move their shoulder's up
+then the image in the background would move up, resulting in a flying-esque effect.
+The user would collect the objects flying from the right of the screen to the left 
+with their right hand. 
+For the silhouette of the person, I took the 26 different joints of the body and 
+then for each pair of joints I drew a polygon and sometimes a circle. The polygon
+would be the representation of the body form (ie a trapezoid for a person's forearm)
+and then I would draw circles on certain joints to have a more realistic feel to it 
+(ie for the shoulder i drew a circle because if i just drew trapezoids it would 
+look really really fake). 
+I then made a splash screen that would allow the user to go between the modes and 
+made them able to go back to the splash screen through pressing certain keys.
+Also I took frameworks from the pykinect workshop and across github in order to 
+get more familiar with the running/documentation of pygame with python. 
